@@ -26,15 +26,15 @@ namespace Age_Calculator
             Console.WriteLine("Entr your birth year");
             yyyy = Convert.ToInt32(Console.ReadLine());
 
-            if ((mm <= 7) && (mm % 2 == 0))
+            if ((MM <= 7) && (MM % 2 == 0))
             {
                 x = 30;
             }
-            else if ((mm <= 7) && !(mm % 2 == 0))
+            else if ((MM <= 7) && !(MM % 2 == 0))
             {
                 x = 31;
             }
-            else if (mm == 2)
+            else if (MM == 2)
             {
                 if (yyyy % 4 == 0)
                 {
@@ -45,9 +45,13 @@ namespace Age_Calculator
                     x = 28;
                 }
             }
-            else
+            else if ((MM > 7) && (MM % 2 == 0))
             {
-                x = 30; 
+                x = 31; 
+            }
+            else 
+            {
+                x = 30;
             }
 
             if (mm > MM)
