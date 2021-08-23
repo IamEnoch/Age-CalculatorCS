@@ -10,9 +10,9 @@ namespace Age_Calculator
             int dd;
             int yyyy;
 
-            int MM = 8;
-            int DD = 4;
-            int YYYY = 2021;
+            int MM = DateTime.Now.Month;
+            int DD = DateTime.Now.Day;
+            int YYYY = DateTime.Now.Year;
 
             int x;
             int y;
