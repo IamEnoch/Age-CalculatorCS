@@ -15,8 +15,7 @@ namespace Age_Calculator
             int YYYY = DateTime.Now.Year;
 
             int x;
-            int y;
-
+            
             Console.WriteLine("Enter your birthday");
             dd = Convert.ToInt32(Console.ReadLine());
 
@@ -64,7 +63,7 @@ namespace Age_Calculator
                 DD += x;
                 MM -= 1;
             }
-            Console.WriteLine("You`re {0} year(s) {1} month(s) and {2} day(s)", (YYYY - yyyy), (MM - mm), (DD - dd));
+            Console.WriteLine($"You`re {YYYY - yyyy} year(s) {MM - mm} month(s) and {DD - dd} day(s) old");
         }
     }
 }
